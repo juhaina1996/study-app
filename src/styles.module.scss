@@ -1,0 +1,104 @@
+.mainContent {
+  font-family: "Times New Roman", Times, serif;
+}
+/* Style for the main container */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+.subjectList {
+  color: #000;
+  text-decoration: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Style for the sidebar (navigation bar) */
+.sidebar {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: rgb(69 5 46 / 86%);
+  color: #ddd;
+}
+
+/* Style for the content section */
+.content {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.selectedItem {
+  background-color: #ff5ae9ad; /* Change to your preferred background color */
+  color: #fff; /* Change to your preferred text color */
+  font-weight: bold;
+  padding: 15px 22px;
+  border-radius: 10px;
+  width: 85%;
+}
+.subjectList {
+  padding: 10px 15px;
+}
+.completedChapter {
+  color: #888; /* Sample styling for completed chapters */
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20% 20%;
+  }
+}
+
+body {
+  background: linear-gradient(45deg, #f3f3f3, #ffffff);
+  background-size: 200% 200%;
+  animation: backgroundAnimation 10s infinite;
+}
+.navBar {
+  display: flex;
+  gap: 30px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.chapter,
+.completedChapter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60px;
+  align-items: center;
+}
+.buttonCompleted {
+  background: transparent;
+  border: 1px solid #ff5ae9ad;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 15px;
+  color: #000;
+}
+.buttonTakeTest {
+  background: transparent;
+  border: 1px solid #11b724ad;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 15px;
+  color: #000;
+}
+.remainingDays {
+  text-align: center;
+  color: #000000;
+  font-size: 21px;
+}
+.timer {
+  background: #fbb8fe;
+  padding: 7px 14px;
+  margin: 15px;
+  border-radius: 15px;
+  border: 1px solid #f689fc;
+}
