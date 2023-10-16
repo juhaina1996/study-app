@@ -71,7 +71,7 @@ ul {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  margin-right: 60px;
+  margin-right: 10px;
   align-items: center;
 }
 .buttonCompleted {
@@ -101,4 +101,12 @@ ul {
   margin: 15px;
   border-radius: 15px;
   border: 1px solid #f689fc;
+}
+.buttonReset {
+  background: transparent;
+  border: 1px solid #fe0a0aad;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 15px;
+  color: #000;
 }

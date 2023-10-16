@@ -239,7 +239,7 @@ function App() {
           {menuOpen && (
             <div className={styles.sidebar}>
               <ul>
-                {subjects.map((subject) => (
+                {subjects.map((subject, index) => (
                   <li
                     key={subject.id}
                     className={
@@ -249,7 +249,7 @@ function App() {
                     }
                   >
                     <Link
-                      to={`/subjects/${subject.id}`}
+                      to={`/subjects/${subject.id}/${index + 1}`}
                       onClick={() => {
                         setSelectedSubject(subject.id);
                         toggleMenu();
@@ -267,10 +267,10 @@ function App() {
           )}
           <div className={styles.content}>
             <Routes>
-              {subjects.map((subject) => (
+              {subjects.map((subject, index) => (
                 <Route
                   key={subject.id}
-                  path={`/subjects/${subject.id}`}
+                  path={`/subjects/${subject.id}/${index + 1}`}
                   element={
                     <Chapters
                       chapters={subject.chapters}
